@@ -46,10 +46,9 @@ def month_and_its_days2():
 month_and_its_days2()
 
 
-def month_and_its_days3(month):
-    for m, d in months_in_the_year:
-        month == m
-        print(f'There is {d} days in {m}')
+def month_and_its_days3(month: str) -> int: #saying that it returns an int
+    #return months_in_the_year[month]
+    return months_in_the_year.get(month.title(), -1) #second thing is what the default should be 
 
-
-month_and_its_days3('Jan')
+month_to_get = 'Jan'
+print(f'{month_to_get} has {month_and_its_days3(month_to_get)} days')
