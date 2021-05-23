@@ -26,7 +26,7 @@ list = [12, 34, 9, 96, 13, 87, 56]
 for i in range(len(list)):
     min = i
     for j in range(i+1, len(list)):
-        if list[min] < list[j]:
+        if list[j] < list[min]:
             min = j
     list[i], list[min] = list[min], list[i]
 
