@@ -4,6 +4,10 @@ import random
 class Die:
     def __init__(self, sides):
         self.sides = sides
+        self.value = 1
+
+    def value(self):
+        return self.value
 
     def roll_die(self):
         return random.randint(1, self.sides)
