@@ -1,0 +1,31 @@
+header{
+    background-color: black;
+    text-align: center;
+    border: 1px solid white;
+    /*border-bottom: 1px inset gray;*/
+    border-radius: 8px;
+
+}
+header img{
+    width: 300px;
+}
+h1 {
+    color: white;
+    /*color: green;*/
+   /*text-align: justify;*/ 
+   /*border-width: 2px;
+   border-style: dashed;
+   border-color: white;
+   border-bottom-width: 4px;*/
+   
+}
+html{
+    background-color: tan;
+}
+p{
+    color: white;
+}
+a{
+    font-size: 23px;
+    color: white;
+}
