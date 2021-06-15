@@ -1,0 +1,76 @@
+header {
+    background-color: black;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+
+}
+header img {
+    width: 300px;
+    height: 168.75px;
+}
+header h1 {
+    font-size: 21px;
+    color: white;
+    text-transform: uppercase;
+}
+html {
+    background-color: tan;
+    max-width: 100%;
+}
+body p {
+    font-size: 26px;
+    color: white;
+}
+header a {
+    color: white;
+    font-size: 22px;
+}
+a {
+    font-size: 17px;
+    color: white;
+    font-weight: 200;
+}
+header h1 {
+    color: white;
+}
+body article p {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+ul li span{
+    display: block;
+    color: white;
+}
+ul li {
+    text-align: center;
+    display: inline-block;
+    padding: 10%;
+    margin: auto;
+}
+nav ul li {
+    text-align: center;
+    display: inline-block;
+    padding: 0%;
+}
+.copyright {
+    position: fixed;
+}
+div p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-family: Dancing Script,'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px white;
+    text-decoration: underline;
+}
+a:hover {
+    font-family: Dancing Script,'Arial Narrow Bold', sans-serif ;
+    text-shadow: 2px 2px 5px white;
+}
+
