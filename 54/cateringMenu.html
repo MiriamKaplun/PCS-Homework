@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.jpg">
+    <title>Review Form</title>
+    <link rel="stylesheet" href="restaurant.css">
+    <style>
+                table {
+            border-collapse: collapse;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: .5em 1em;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        th {
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 23px;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        tfoot,
+        tbody tr:nth-child(odd) {
+            background-color: black;
+        }
+
+        td:last-child {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: pink;
+            color: rgb(238, 32, 67);
+            text-shadow: 2px 2px 5px rgba(245, 45, 161, 0.74);
+
+        }
+
+        caption {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Elegant Restaurant</h1>
+        <img src="https://thewallpaper.co/wp-content/uploads/2020/08/restaurant-high-resolution-wallpaper-download-restaurant-photos-free-best-backgrounds-colors-display-1920x1080-1.jpg"
+            alt="Restaurant" />
+        <br>
+        <nav>
+            <ul>
+                <li><a href="ourMenu.html">Menu</a></li>
+                |
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <table>
+        <caption>Catering Menu</caption>
+        <thead>
+            <tr>
+                <th>Food</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chicken Fingers</td>
+                <td>9x13 Pan</td>
+                <td>$39.99</td>
+                <td>Crunchy classic chicken fingers</td>
+            </tr>
+            <tr>
+                <td>Buffalo Wings</td>
+                <td>9x13 Pan</td>
+                <td>$45.99</td>
+                <td>Spicy chicken wings</td>
+            </tr>
+            <tr>
+                <td>Burgers</td>
+                <td>9x13 Pan</td>
+                <td>$50.99</td>
+                <td>Juicy beef burgers</td>
+            </tr>
+            <tr>
+                <td>Fries</td>
+                <td>9x13 Pan</td>
+                <td>$25.99</td>
+                <td>Spicy and regular fries</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td>Salad</td>
+                <td>Large Salad</td>
+                <td>$39.99</td>
+                <td>Large lettuce and tomato salad</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+    
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.jpg">
+    <title>Review Form</title>
+    <link rel="stylesheet" href="restaurant.css">
+    <style>
+        form {
+            width: 35%;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            height: 30px;
+            box-sizing: border-box;
+            margin-bottom: 1em;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        textarea {
+            height: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Elegant Restaurant</h1>
+        <img src="https://thewallpaper.co/wp-content/uploads/2020/08/restaurant-high-resolution-wallpaper-download-restaurant-photos-free-best-backgrounds-colors-display-1920x1080-1.jpg"
+            alt="Restaurant" />
+        <br>
+        <nav>
+            <ul>
+                <li><a href="ourMenu.html">Menu</a></li>
+                |
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <form action="feedback.php" method="POST">
+
+        <label for="firstName">First Name:</label>
+        <input id="firstName" name="firstName" placeholder="Enter First Name" maxlength="15" required>
+
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" name="lastName" placeholder="Enter Last Name" maxlength="15" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="dateVisited">Date Visited:</label>
+        <input type="date" name="dateVisited" id="dateVisited" value="2021-01-01" min="1900-01-01" max="2021-06-20">
+
+        <label for="rating">Rating:</label>
+        <input type="range" name="rating" id="rating" min="1" max="10">
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" placeholder="Enter comment here">This is a great restaurant</textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
