@@ -45,9 +45,9 @@
         </div>
 
         <div class="grid">
-            <div>
+            <div class="grid-item">
                 <h2>Computers</h2>
-                <img src="images/macworld.jpg" alt="Computer" />
+                <img src="images/macworld.jpg" alt="Computer" width="100%" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Temporibus similique, reiciendis consequatur aperiam
@@ -55,9 +55,10 @@
                     enim natus excepturi iste perferendis ducimus.
                 </p>
             </div>
-            <div>
+            <div class="line"></div>
+            <div class="grid-item">
                 <h2>Choirs</h2>
-                <video src="video/El Hanaar Hazeh.mp4" controls poster="images/shira.png"></video>
+                <video src="video/El Hanaar Hazeh.mp4" controls width="100%" poster="images/shira.png"></video>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Temporibus similique, reiciendis consequatur aperiam
@@ -65,9 +66,10 @@
                     enim natus excepturi iste perferendis ducimus.
                 </p>
             </div>
-            <div class="candy">
+            <div class="line"></div>
+            <div class="candy grid-item">
                 <h2>Candy</h2>
-                <img src="images/candy.png" alt="Candy" />
+                <img src="images/candy.png" alt="Candy" width="100%" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Temporibus similique, reiciendis consequatur aperiam
@@ -78,14 +80,17 @@
         </div>
 
         <div class="signUp" id="signUp">
-            <h2>Sign Me Up!</h2>
-            <label>Name:
-                <input name="firstName" placeholder="Your Name">
-            </label>
-            <label>Email:
-                <input name="firstName" placeholder="Your Email">
-            </label>
-            <button type="submit" class="signupbtn">Sign Me Up!</button>
+            <form action="submit.php" method="POST">
+                <h2>Sign Me Up!</h2>
+                <span><label>Name:
+                        <input  required name="firstName" placeholder="Your Name">
+                    </label></span>
+                <span><label>Email:
+                        <input pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*.
+                        [a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)" maxlength="30" required name="firstName" placeholder="Your Email">
+                    </label></span>
+                <span><button type="submit" class="signupbtn">Sign Me Up!</button></span>
+            </form>
         </div>
 
         <div class="financials" id="financials">
@@ -168,6 +173,29 @@
                 iste quam. Eligendi provident tempora dignissimos in omnis, doloribus ducimus
                 architecto maxime ipsa alias enim est ullam deserunt libero inventore quibusdam
                 iusto molestias distinctio amet quas fugit commodi? Reprehenderit, nulla?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae et ratione
+                id velit, quis debitis architecto neque? Odio veniam fuga minima unde debitis,
+                voluptatibus expedita quasi excepturi nesciunt autem, aperiam, aspernatur rerum
+                officiis facere! A unde est tempore soluta eaque alias vero sequi, suscipit ratione
+                autem iusto consequuntur delectus reiciendis labore minus perferendis voluptas
+                assumenda praesentium laudantium blanditiis! Sit dignissimos suscipit odit quod,
+                enim ipsa ut debitis ullam porro ex dolorum est repellendus sapiente tenetur
+                nesciunt blanditiis nulla minus? Repudiandae minima totam dolorem quod sapiente
+                assumenda cupiditate. Tempore dolorum blanditiis iste sit est. Deleniti quo maxime
+                illo at enim repellendus praesentium alias accusantium ab dolor amet, qui et
+                asperiores modi suscipit corporis. Laborum sit reprehenderit at veritatis tenetur
+                architecto impedit maiores, dolor numquam praesentium labore est nobis quos sunt
+                veniam beatae sapiente, ex ut. Quasi rerum similique iusto fugit! Suscipit ab dolorem
+                amet dolores! Eos laudantium excepturi nihil doloremque laborum consectetur dicta
+                sit voluptas nam alias? Numquam corporis et consequuntur non omnis est, aliquid
+                quam laboriosam suscipit voluptatum dolore soluta, aspernatur officia facilis quas
+                cupiditate deleniti, similique vitae impedit quo. Aliquam doloremque dolor,
+                architecto blanditiis officia iure? Soluta dignissimos maxime est nesciunt expedita
+                esse nam quas ut. Repellendus sapiente veniam, numquam quo itaque sequi iure! Optio
+                nam numquam, id nulla amet molestias! Tenetur voluptatem et, distinctio quaerat beatae
+                consectetur quo voluptatibus obcaecati animi ad enim asperiores ullam reprehenderit
+                sunt reiciendis aliquam impedit consequatur a esse fugiat perferendis quibusdam fugit
+                repudiandae! Ullam fugit ipsam fuga cupiditate hic similique, aperiam odio atque!
             </p>
         </div>
 
