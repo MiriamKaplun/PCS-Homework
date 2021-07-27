@@ -1,0 +1,140 @@
+html {
+    font-family: helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    padding-inline-start: 75px;
+}
+
+.toprow li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.middleofpage {
+    height: auto;
+    position: absolute;
+    margin: 0px 10%;
+}
+
+.estuff {
+    padding: 20px;
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.grid {
+    margin: 0 auto;
+    display: grid;
+    gap: 1em;
+    text-align: justify;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center
+}
+
+.grid:nth-child(1) {
+    grid-column: 2 / span 1;
+}
+
+.grid:nth-child(2) {
+    grid-column: 3 / span 1;
+}
+
+.grid:nth-child(3) {
+    grid-column: 4 / span 1;
+}
+
+.grid h2 {
+    text-align: center;
+}
+
+.signUp {
+    padding: 20px;
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .signupbtn {
+      
+    }
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid black;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+td {
+    text-align: right;
+}
+
+caption {
+    font-weight: bold;
+    caption-side: top;
+    padding: .5em 1em;
+}
+
+tbody tr:hover {
+    background-color: lightskyblue;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: rgb(184, 206, 240);
+}
+
+tbody td:nth-child(6) {
+    color: red;
+}
+
+tfoot td:nth-child(2) {
+    color: red;
+}
+
+.aboutUs {
+    display: inline-block;
+}
+
+.footer {
+    position: fixed;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#copyright {
+    color: white;
+    padding: 10px;
+}
