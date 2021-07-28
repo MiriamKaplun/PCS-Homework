@@ -21,13 +21,13 @@ html {
     text-decoration: underline;
 }
 
-.toprow {
-    margin-left: 8%;
-}
-
-.toprow li {
+.toprow li{
     display: inline-block;
     padding-right: 10px;
+}
+
+.bar {
+    margin: 0px 10%;
 }
 
 .middleofpage {

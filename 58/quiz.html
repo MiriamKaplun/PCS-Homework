@@ -13,12 +13,14 @@
     <div>
         <nav class="navbar">
             <header>
-                <ul class="toprow">
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#signUp">Sign Up</a></li>
-                    <li><a href="#financials">Financials</a></li>
-                    <li><a href="#aboutUs">About Us</a></li>
-                </ul>
+                <section class="bar">
+                    <ul class="toprow">
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#signUp">Sign Up</a></li>
+                        <li><a href="#financials">Financials</a></li>
+                        <li><a href="#aboutUs">About Us</a></li>
+                    </ul>
+                </section>
             </header>
         </nav>
 
@@ -83,11 +85,12 @@
             <form action="submit.php" method="POST">
                 <h2>Sign Me Up!</h2>
                 <span><label>Name:
-                        <input  required name="firstName" placeholder="Your Name">
+                        <input required name="firstName" placeholder="Your Name">
                     </label></span>
                 <span><label>Email:
                         <input pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*.
-                        [a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)" maxlength="30" required name="firstName" placeholder="Your Email">
+                        [a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)" maxlength="30" required name="firstName"
+                            placeholder="Your Email">
                     </label></span>
                 <span><button type="submit" class="signupbtn">Sign Me Up!</button></span>
             </form>
@@ -153,6 +156,7 @@
                         <td>$20978798.85</td>
                     </tr>
                 </tfoot>
+            </table>
         </div>
 
         <div class="aboutUs" id="aboutUs">
