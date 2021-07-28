@@ -61,7 +61,7 @@ html {
     text-align: justify;
     grid-template-columns: 1fr 0 1fr 0 1fr;
     justify-content: inherit;
-    padding-bottom: 5px;
+    padding-bottom: 45px;
 }
 
 .grid h2 {
@@ -88,6 +88,7 @@ html {
 
 .signUp input {
     box-shadow: 2px 2px 5px black;
+    border-radius: 5px 5px 5px 5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -121,10 +122,6 @@ caption {
     padding: .5em 1em;
 }
 
-tbody tr:hover {
-    background-color: lightskyblue;
-}
-
 tbody tr:nth-child(2n+1) {
     background-color: rgb(184, 206, 240);
 }
@@ -137,9 +134,14 @@ tfoot td:nth-child(2) {
     color: red;
 }
 
+tbody tr:hover {
+    background-color: rgb(44, 124, 243);
+}
+
 @media screen and (max-width: 1000px) {
     .thetable {
-      overflow: scroll;
+      overflow-x: scroll;
+      overflow-y: hidden;
     }
 }
 
