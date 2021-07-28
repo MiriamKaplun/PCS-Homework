@@ -21,7 +21,11 @@ html {
     text-decoration: underline;
 }
 
-.toprow li{
+.toprow {
+    margin-left: 8%;
+}
+
+.toprow li {
     display: inline-block;
     padding-right: 10px;
 }
