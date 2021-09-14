@@ -1,6 +1,8 @@
+// SL - most comments from quizQ2a.js apply to this file as well
 window.app = (function () {
     'use strict';
 
+    // SL - all this is just a really complicated way of console.logging 5... really not much different (aside from lots of extra complexity) from console.log(5)
     function counter() {
 
         let initValue = 0;
@@ -19,3 +21,5 @@ window.app = (function () {
     incrementCounter();
 
 }(window.app || {}));
+
+// SL - is this supposed to be the second counter?
