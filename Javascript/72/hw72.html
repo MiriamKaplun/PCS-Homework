@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #theDiv {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form id="theForm">
+        <label>Choose a recipe:</label>
+        <select name="recipes" id="recipes"> </select>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+    <div id="theDiv">
+        <h1 id="recipeName"></h1>
+        <img src="" alt="" id="image">
+        <ul id="ingredientsList"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="hw72.js"></script>
+</body>
+
+</html>
