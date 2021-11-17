@@ -1,0 +1,17 @@
+[
+    {
+        "videoName": "El Hanaar Hazeh",
+        "url": "videos/elHanaarHazeh.mp4",
+        "pic": "images/elHanaarHazeh.jpeg"
+    },
+    {
+        "videoName": "Ivri",
+        "url": "videos/ivri.mp4",
+        "pic": "images/ivri.jpeg"
+    },
+    {
+        "videoName": "Kol Zman",
+        "url": "videos/kolzman.mp4",
+        "pic": "images/kolzman.jpeg"
+    }
+]
