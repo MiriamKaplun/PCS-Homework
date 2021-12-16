@@ -1,27 +1,26 @@
 (function () {
   'use strict';
- 
-  const leftear = $('#parts').append('<img class="pic" src="images/leftear.png"></img>');
-  const eyeGlasses = $('#parts').append('<img class="pic" src="images/eyesGlasses.png"></img>');
-  const mouth = $('#parts').append('<img class="pic" src="images/mouth.png"></img>');
-  const rightear = $('#parts').append('<img class="pic" src="images/rightear.png"></img>');
-  const nose = $('#parts').append('<img class="pic" src="images/nose.png"></img>');
 
   let nextZIndex = 1;
 
   let dragging = null; //false;
   let offset;
 
-  const parts1 = [leftear, eyeGlasses, mouth, rightear, nose];
-
- function partLocation (location) {
-    parts1.forEach(part => {
-      console.log(part[0]);
-      //part.localStorage.setItem('location', JSON.stringify(location));
+  function partLocation() {
+    const parts = $('.pic');
+    const partArray = [];
+    parts.each((i, p) => {
+      console.log(i, p);
+      const part = $(p);
+      partArray.push({
+        src: part.attr('src'),
+        top: part.css('top'),
+        left: part.css('left'),
+        zIndex: part.css('zIndex')
+      });
+      localStorage.setItem('parts', JSON.stringify(partArray));
     });
   }
-
-  //const partLocation1 = JSON.parse(localStorage.getItem('partLocation1')) || [];
 
   $(document)
     .on('mousedown', '.pic', e => {
@@ -37,17 +36,43 @@
         dragging.css({ top: e.pageY - offset.y, left: e.pageX - offset.x });
       }
     })
-    .mouseup(e => {
+    .mouseup(() => {
       if (dragging) {
         console.log('mouseup');
         dragging = null;
-        const position = { top: e.pageY - offset.y, left: e.pageX - offset.x };
-        console.log(position);
-        localStorage.setItem('position', JSON.stringify(position));
-        partLocation(position);
-        /*partLocation1.forEach (part2 => {
-           
-        });*/
+        //const position = { top: e.pageY - offset.y, left: e.pageX - offset.x };
+        //console.log(position);
+        //localStorage.setItem('position', JSON.stringify(position));
+        partLocation();
       }
     });
+
+  if (localStorage.location) {
+    const partsInfo = JSON.parse(localStorage.location);
+    partsInfo.forEach(partInfo => {
+      $(`img[src="${partInfo.src}"]`).css(/*{
+          top: partInfo.top,
+          left: partInfo.left,
+          zIndex: partInfo.zIndex
+        }*/partInfo);
+    });
+  }
+
+  const cacheParts = localStorage.getItem('parts');
+  if (cacheParts) {
+    JSON.parse(cacheParts).forEach(part => {
+      console.log(part);
+      $(`<img class="pic" src="${part.src}">`).css({
+        top: part.top,
+        left: part.left,
+        zIndex: part.zIndex
+      }).appendTo("#parts");
+    });
+  } else {
+    $('#parts').append('<img class="pic" src="images/leftear.png">');
+    $('#parts').append('<img class="pic" src="images/eyesGlasses.png">');
+    $('#parts').append('<img class="pic" src="images/mouth.png">');
+    $('#parts').append('<img class="pic" src="images/rightear.png">');
+    $('#parts').append('<img class="pic" src="images/nose.png">');
+  }
 }());
